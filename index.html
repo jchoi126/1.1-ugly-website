@@ -5,20 +5,35 @@
     <title>Road Bike Stuffs</title>
     <link rel="stylesheet" href="styles.css" media="screen" title="no title">
 
+
   </head>
   <body>
    <h1>Road Bike Destinations: Paris Mountain</h1>
    <h2>Great place to be!!</h2>
-
    <hr/>
 
-   <p>
-     Bacon ipsum dolor amet spare ribs corned beef turducken biltong t-bone fatback chuck bresaola pancetta ham. Biltong tail sirloin short ribs boudin strip steak, tenderloin filet mignon flank fatback hamburger salami jowl bresaola. Salami pork bacon kielbasa leberkas pork belly short loin. Corned beef rump ground round alcatra porchetta, sausage short ribs cupim pancetta pork ball tip capicola.
-   </p>
 
-   <p>
-     Filet mignon ribeye fatback, spare ribs shank meatball doner rump capicola alcatra landjaeger prosciutto. Picanha pork belly tongue turkey, shoulder rump meatloaf corned beef salami pork loin tri-tip drumstick. Meatloaf kielbasa andouille sausage kevin tenderloin pork loin landjaeger alcatra chuck swine. Ham hock andouille cow brisket tail strip steak drumstick pork sausage. Tri-tip brisket ham, swine filet mignon capicola pastrami. Sausage drumstick pig kevin pastrami frankfurter. Tail leberkas pig rump sirloin andouille tenderloin flank ground round venison chicken.
-   </p>
+   <div id="contentBox" style="margin:0px auto; width:70%">
+
+    <!-- columns divs, float left, no margin so there is no space between column, width=1/3 -->
+       <div id="column1" style="float:left; margin:0; width:33%;">
+        <p>
+          Bacon ipsum dolor amet spare ribs corned beef turducken biltong t-bone fatback chuck bresaola pancetta ham. Biltong tail sirloin short ribs boudin strip steak, tenderloin filet mignon flank fatback hamburger salami jowl bresaola. Salami pork bacon kielbasa leberkas pork belly short loin. Corned beef rump ground round alcatra porchetta, sausage short ribs cupim pancetta pork ball tip capicola.
+        </p>
+       </div>
+
+       <div id="column2" style="float:left; margin:0;width:33%;">
+        <p>
+          Bacon ipsum dolor amet spare ribs corned beef turducken biltong t-bone fatback chuck bresaola pancetta ham. Biltong tail sirloin short ribs boudin strip steak, tenderloin filet mignon flank fatback hamburger salami jowl bresaola. Salami pork bacon kielbasa leberkas pork belly short loin. Corned beef rump ground round alcatra porchetta, sausage short ribs cupim pancetta pork ball tip capicola.
+        </p>
+       </div>
+
+       <div id="column3" style="float:left; margin:0;width:33%">
+        <p>
+          Filet mignon ribeye fatback, spare ribs shank meatball doner rump capicola alcatra landjaeger prosciutto. Picanha pork belly tongue turkey, shoulder rump meatloaf corned beef salami pork loin tri-tip drumstick. Meatloaf kielbasa andouille sausage kevin tenderloin pork loin landjaeger alcatra chuck swine. Ham hock andouille cow brisket tail strip steak drumstick pork sausage. Tri-tip brisket ham, swine filet mignon capicola pastrami. Sausage drumstick pig kevin pastrami frankfurter. Tail leberkas pig rump sirloin andouille tenderloin flank ground round venison chicken.
+        </p>
+       </div>
+   </div>
 
    <ul id="bike-links" class="nav-links">
      <li class="nav-link">
@@ -32,7 +47,21 @@
      </li>
    </ul>
 
-   <img src="" alt="" />
+<h2 id='blinker'>Come Back and See Us!</h2>
 
+<marquee behavior="scroll" direction="left">Hit up Paris Mountain, it's worth it!</marquee>
+
+
+<script type="text/javascript">
+  var blink = document.getElementById('blinker');
+  console.log(blink);
+    setInterval(function() {
+        blink.style.display = (blink.style.display == 'none' ? 'initial' : 'none')
+    },1000
+  );
+</script>
+<footer>
+<img src="http://www.netanimations.net/crane-under-construction.gif" alt="" />
+</footer>
   </body>
 </html>
